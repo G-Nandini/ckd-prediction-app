@@ -48,6 +48,7 @@ def predict():
         except Exception as e:
             logging.error(f"Error during prediction: {e}")
             return "An error occurred. Please check your inputs."
-
+            
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=10000)
+
